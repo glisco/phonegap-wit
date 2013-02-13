@@ -23,6 +23,7 @@
     // Cordova is ready
     //
     function onDeviceReady() {
+      
           navigator.notification.alert(
             'We are launching!',  // message
             alertDismissed,         // callback
@@ -30,7 +31,9 @@
             'Continue'                  // buttonName
          );
          //navigator.splashscreen.hide();
-         var ref = window.open('https://m.satisfly.com/newfltadm/mobile/login', '_blank', 'location=yes');
+         //var ref = window.open('https://m.satisfly.com/newfltadm/mobile/login', '_blank', 'location=yes');
+         
+         var ref = window.open('https://m.satisfly.com/newfltadm/mobile/login', '_self');
          ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
          ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
          ref.addEventListener('exit', function() { alert(event.type); });
