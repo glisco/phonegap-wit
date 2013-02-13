@@ -1,4 +1,31 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <title>InAppBrowser.addEventListener Example</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova-2.4.0.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+         var ref = window.open('http://apache.org', '_blank', 'location=yes');
+         ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
+         ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
+         ref.addEventListener('exit', function() { alert(event.type); });
+    }
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+
+
 <!--
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
@@ -16,7 +43,7 @@
      KIND, either express or implied.  See the License for the
     specific language governing permissions and limitations
     under the License.
--->
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -44,3 +71,4 @@
         </script>
     </body>
 </html>
+-->
