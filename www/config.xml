@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.satisfly.hello-world"
+        id        = "com.satisfly.wit"
         version   = "1.1.0">
-    <name>SATISFLY</name>
+    <name>WIT 2013</name>
 
     <description>
-        Satisfly app.
+        WIT 2013
     </description>
 
     <author href="http://www.satisfly.com" email="ops@satisfly.com">
